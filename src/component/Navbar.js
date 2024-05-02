@@ -8,9 +8,8 @@ const Navbar = () => {
     Navigate('/login')
   }
   return (
-    <div className='navcolor'>
-      
-      <nav className="navbar navbar-expand-lg bg-navcolor text-white ">
+    <div className='navcolor'> 
+      <nav className="navbar fixed-top navbar-expand-lg fixed-top"  >
   <div className="container-fluid">
     <a className="navbar-brand" href="/">Navbar</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,9 +24,9 @@ const Navbar = () => {
     </div>
     
     {!localStorage.getItem('token')?<form action="">
-    <Link className="btn btn-primary" to="login" role="button">Login</Link>
-    <Link className="btn btn-primary" to="signup" role="button">Signup</Link>
-    </form>: <button className="btn btn1" onClick={logout}>Logout</button>
+    <Link className="btn btn-primary bttn" to="login" role="button">Login</Link>
+    <Link className="btn btn-primary mx-2 bttn " to="signup" role="button">Signup</Link>
+    </form>: <button className="btn btn-primary bttn2 " onClick={logout}>Logout</button>
 }
   </div>
 </nav>

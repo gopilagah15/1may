@@ -34,6 +34,13 @@ const Signup = (props) => {
          
     }
   return (
+    <>
+     <div className="container me2">
+      <h1 className='inot'>Signup to iNotebook</h1>
+    </div>
+    <div className="para">
+      <p>This is one of the topmost note apps in playstore, the only other being Listing it app. But it's purpose is different. My notes has cloud storage, multiple folders, takes unlimited text in a single note, can share multiple notes in a single go etc. I have started using it to write all my major notes........</p>
+    </div>
     <div className='foo'>
         <form action="" onSubmit={handleSubmit}> 
   <div className="mb-3">
@@ -53,6 +60,7 @@ const Signup = (props) => {
 </form> 
 
     </div>
+    </>
   )
 }
 

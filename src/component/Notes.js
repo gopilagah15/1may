@@ -91,7 +91,7 @@ let navigate = useNavigate();
     </div>
   </div>
   <h2 className="vf">Your Notes</h2> 
-  <div className="container">
+  <div className="container ">
 <div className="con">
   <div className="row my-3">
   
