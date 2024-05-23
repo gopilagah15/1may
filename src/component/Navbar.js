@@ -9,9 +9,10 @@ const Navbar = () => {
   }
   return (
     <div className='navcolor'> 
-      <nav className="navbar fixed-top navbar-expand-lg fixed-top"  >
+      <nav className="navbar fixed-top navbar-expand-lg fixed-top navbar-light navbar-dark  "  >
+      {/* <nav className="navbar navbar-dark bg-dark "  > */}
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">Navbar</a>
+    <a className="navbar-brand" href="/ishome">Navbar</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -26,7 +27,7 @@ const Navbar = () => {
     {!localStorage.getItem('token')?<form action="">
     <Link className="btn btn-primary bttn" to="login" role="button">Login</Link>
     <Link className="btn btn-primary mx-2 bttn " to="signup" role="button">Signup</Link>
-    </form>: <button className="btn btn-primary bttn2 " onClick={logout}>Logout</button>
+    </form>: <button className="btn btn-primary " onClick={logout}>Logout</button>
 }
   </div>
 </nav>

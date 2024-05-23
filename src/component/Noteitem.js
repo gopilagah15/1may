@@ -8,13 +8,13 @@ const Noteitem = (props) => {
   const {note,updateNote} = props
   return (
    <>
-    <div className="col-md-3 card1" > 
+    <div className="col-md-3 card1 mx-2" > 
          <div className="card-body ">
           <div className="d-flex align-items-center" >
         <h2 className="card-title hfive" style={{'font-weight':'bold','font-weight':'1000'}}>{note.title}</h2>
         
         </div>
-        <p className="card-text hfive">{note.description}</p> 
+        <p className="card-text hfive btn-primary">{note.description}</p> 
 
         <div className="d-flex align-items-center justify-content-center" >
         <i className="fa-solid fa-trash mx-2" onClick={()=>{deleteNote(note._id);
