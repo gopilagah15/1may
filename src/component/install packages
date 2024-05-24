@@ -1,0 +1,6 @@
+npm i express mongoose -save express-validator bcryptjs jsonwebtoken cors -D nodemon
+
+
+
+
+npm i react-router-dom concurrently
