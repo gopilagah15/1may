@@ -34,7 +34,7 @@ const App = () => {
           <Route exact path='/home' element={<Home showAlert={showAlert} />} /> 
           <Route exact path='/about' element={<About showAlert={showAlert} />} /> 
           <Route exact path='/signup' element={<Signup showAlert={showAlert} />} /> 
-          <Route exact path='/login' element={<Login showAlert={showAlert} />} /> 
+          <Route exact path='/' element={<Login showAlert={showAlert} />} /> 
           </Routes>
           </section>
     </BrowserRouter> 
