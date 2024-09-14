@@ -56,7 +56,7 @@ const Signup = (props) => {
     <input type="text" className="form-control" id="password" name='password' onChange={onChange} value={password}  />
   </div> 
   
-  <button   type="submit" className="btn btn-primary"  >Add Note</button>
+  <button   type="submit" className="btn btn-primary"  >Sign up</button>
 </form> 
 
     </div>
