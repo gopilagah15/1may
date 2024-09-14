@@ -38,7 +38,7 @@ const Login = (props) => {
       <h1 className='inot'>Login to iNotebook</h1>
     </div>
     <div className="para">
-      <p>This is one of the topmost note apps in playstore, the only other being Listing it app. But it's purpose is different. My notes has cloud storage, multiple folders, takes unlimited text in a single note, can share multiple notes in a single go etc. I have started using it to write all my major notes...........</p>
+      <p >Login to iNotebook for secure note-saving, encrypted cloud storage, and seamless access across devices. Easily manage your notes, ensuring privacy and protection with user-friendly features.</p>
     </div>
     
     <div className='foo'>
@@ -53,7 +53,7 @@ const Login = (props) => {
   </div> 
   
   <div className="container btr">
-  <button    type="submit" className=" btn btn-primary xcxx"  >Add Note</button>
+  <button    type="submit" className=" btn btn-primary xcxx"  >Login</button>
   </div>
 </form> 
 

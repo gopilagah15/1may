@@ -39,7 +39,7 @@ const Signup = (props) => {
       <h1 className='inot'>Signup to iNotebook</h1>
     </div>
     <div className="para">
-      <p>This is one of the topmost note apps in playstore, the only other being Listing it app. But it's purpose is different. My notes has cloud storage, multiple folders, takes unlimited text in a single note, can share multiple notes in a single go etc. I have started using it to write all my major notes........</p>
+      <p>Sign up for iNotebook to securely save and access your notes in the cloud. Enjoy encrypted storage, easy organization, and seamless access across all your devices.</p>
     </div>
     <div className='foo'>
         <form action="" onSubmit={handleSubmit}> 

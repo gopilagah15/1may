@@ -12,21 +12,50 @@ section{
   align-items: center;
   /* width: 100%; */
   height: 100vh;  
-  animation: anime 5s linear infinite;
+  animation: anime 100s linear infinite;
   z-index: -1; 
   /* background: url('https://images.unsplash.com/photo-1527345931282-806d3b11967f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm90ZXN8ZW58MHx8MHx8fDA%3D'); */
-  /* background: url('https://media.istockphoto.com/id/1269266185/photo/hourglass-on-laptop-computer-concept-for-time-management.jpg?s=612x612&w=0&k=20&c=uvoFiKwkGBPGTkM6QgvD9Q9dvkJR_k-vk64yBJHROts='); */
-  /* background: url('https://images.unsplash.com/photo-1488998427799-e3362cec87c3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGltcG9ydGFudCUyMG5vdGVib29rfGVufDB8fDB8fHww'); */
-  background: url('https://media.istockphoto.com/id/1294385362/photo/flat-lay-top-view-office-table-desk.jpg?s=612x612&w=0&k=20&c=wfUF33CaidYXU15BIgOIPXO_xGdnkjwGndB4mBNtZG4=');
+  background: url('https://media.istockphoto.com/id/1269266185/photo/hourglass-on-laptop-computer-concept-for-time-management.jpg?s=612x612&w=0&k=20&c=uvoFiKwkGBPGTkM6QgvD9Q9dvkJR_k-vk64yBJHROts=');
+  /* background: url('component/image123.jpg'); */ 
   background-repeat: no-repeat; 
   background-size: cover;
+  background-size: 100% 100%; 
+  animation: myAnim 80s ease 0s 1 normal forwards;
+  object-fit: contain;
+}
+/* .gopi{
+  background: url('https://images.unsplash.com/photo-1616628188550-808682f3926d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG5vdGVzfGVufDB8fDB8fHww') no-repeat center fixed;
+  background-size: 100% 100%; 
+  animation: myAnim 20s ease 0s 1 normal forwards;
+  object-fit: contain;
+} */
+
+@keyframes myAnim {
+0% {
+background-position: center top;
+background-size: 100%;
+}
+20% {
+background-position: bottom left;
+background-size: 120%;
+}
+40% {
+background-position: top right;
+background-size: 140%;
+}
+60% {
+background-position: bottom right;
+background-size: 160%;
+}
+80% {
+background-position: bottom left;
+background-size: 180%;
 }
 
-@keyframes anime {
-  100%{
-      /* filter: hue-rotate(360deg); */
-      z-index: -1;
-  }
+100% {
+background-position: top center;
+background-size: 150%;
+}
 }
 body{ 
   height: 100vh;
@@ -73,7 +102,7 @@ body{
   height: 400px; 
   width: 550px;
   color: rgba(15, 12, 12, 0.767);
-  overflow-y:scroll
+  overflow-y:auto
 }
 .xcx{
   top: 0;
@@ -196,7 +225,8 @@ body{
   position: relative; 
   font-size: 12px;
   left: 40px; 
-  text-shadow: 4px 4px 28px black
+  text-shadow: 4px 4px 28px black;
+  color: white;
 
 }
 .navcolor{
@@ -212,15 +242,16 @@ body{
   /* position: fixed; */
 }
 .vf{
-  color: rgba(0, 0, 0, 0.768);
+  color: white;
   /* bottom: 80%;  
   width: 100%; */
+  font-size: 55px;
   display: flex; 
   position: fixed; 
   justify-content: center;
   font-weight: 800px; 
-  right: 60px;  
-  top: 190px;
+  right: 290px;  
+  top: 160px;
   text-shadow: 4px 4px 12px  black;
   width: 600px;
   height: 150px;
@@ -232,13 +263,14 @@ body{
 .vf2{
   color: white;  
   position: absolute;  
-  text-shadow: 4px 4px 28px black; 
+  text-shadow:  1px 0px 2px black; 
   /* border-radius: 70%; */
-  transform: translate(-50%,-50%);
+  transform: translate(-180%,-50%);
   margin-left: 20%;
   top: 45%;   
-  font-size: 5rem;
+  font-size: 9rem; 
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -289,7 +321,7 @@ button{
   margin: 30px 11px 700 520px ;
   padding: 30px 11px 700 520px ;
   top: 80px;
-  color: black; 
+  color: white; 
 }
 .para1{
   font-size: 25px; 
@@ -306,12 +338,12 @@ button{
   text-shadow: 4px 4px 2px black;
 }
 .ttt{
-  color: black;
-  font-size: xx-large;
+  color: white;
+  font-size: 50px;
   position: absolute;
-  top: 270px;
-  text-shadow: 0px 1px 2px black;
-  margin-left: 15%;
+  top: 470px;
+  text-shadow:  1px 0px 2px black;
+  right: 200px;  
 }
 .new{
   background: url('https://images.unsplash.com/photo-1517842645767-c639042777db?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bm90ZXN8ZW58MHx8MHx8fDA%3D');
@@ -319,22 +351,22 @@ button{
   background-size: cover;
 }
 .abt{
-  color: rgba(0, 0, 0, 0.722);
-  font-size: xx-large;  
+  color: white;
+  font-size: 44px;  
   margin-top: 200px;
-  text-shadow: 1px 0px 2px white; 
+  text-shadow: 1px 0px 2px black; 
   padding: 50px;
-  margin-left: 500px;
+  margin-left: 300px;
 }
 .vf22{
   color: white;  
   position: absolute;  
-  text-shadow: 4px 4px 28px black; 
+  text-shadow: 1px 0px 2px black; 
   border-radius: 70%;
   transform: translate(-50%,-50%);
-  margin-left: 70%;
-  top: 15%;   
-  font-size: 5rem;
+  margin-left: 30%;
+  top: 25%;   
+  font-size: 8rem;
 }
 
 @media screen and (min-width:200px){
@@ -400,7 +432,7 @@ button{
     text-shadow: 1px 0px 1px  black; 
   }
   .para{
-    font-size: 12px; 
+    font-size: 42px; 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.306);
     position: relative;  
     /* margin: 30px 11px 700 820px ;
@@ -436,7 +468,7 @@ button{
     text-shadow: 1px 0px 1px  black; 
   }
   .para{
-    font-size: 12px; 
+    font-size: 42px; 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.306);
     position: relative;  
     /* margin: 30px 11px 700 820px ;
@@ -472,7 +504,7 @@ button{
     text-shadow: 1px 0px 1px  black; 
   }
   .para{
-    font-size: 12px; 
+    font-size: 52px; 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.306);
     position: relative;  
     /* margin: 30px 11px 700 820px ;
@@ -511,7 +543,7 @@ button{
     text-shadow: 1px 0px 1px  black; 
   }
   .para{
-    font-size: 12px; 
+    font-size: 52px; 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.306);
     position: relative;  
     /* margin: 30px 11px 700 820px ;
@@ -574,15 +606,20 @@ button{
     opacity: 0.9;
   }
   .para{
-    font-size: 22px; 
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.306);
+    font-size: 52px; 
+    text-shadow: 12px 2px 14px black(0, 0, 0, 0.306);
     position: relative;  
     /* margin: 30px 11px 700 820px ;
     padding: 30px 11px 700 520px ; */
     margin-left: 150px;
     top: 80px;
-    color: black; 
+    color: white; 
   } 
 
 
 } 
+
+i{
+  color: white;
+}
+
